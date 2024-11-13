@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Solution</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ONE SOLUTION</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://bluelofttechnologies.com/wp-content/uploads/2024/04/web.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://externlabs.com/blogs/wp-content/uploads/2022/04/b2.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661573365093-5b930d863ffb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+          style="width: 100%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          We are a team of professionals dedicated to providing innovative
+          solutions to help businesses grow and succeed.
+        </p>
+        <p>
+          Our mission is to empower businesses with cutting-edge technology and
+          expert insights to help them achieve their goals faster and more
+          efficiently.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>
+          Build stunning websites tailored to your needs, from simple landing
+          pages to complex, feature-rich platforms.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>App Development</h3>
+        <p>
+          Creating robust mobile applications for iOS and Android, designed to
+          provide an excellent user experience.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Consulting</h3>
+        <p>
+          Expert guidance to optimize your business operations and streamline
+          processes with technology solutions.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature-card">
+        <h3>Expert Team</h3>
+        <p>
+          Our team consists of skilled professionals with years of experience in
+          the industry, delivering top-quality solutions.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Customer-Centric</h3>
+        <p>
+          We put our customers first, ensuring that our solutions are tailored
+          to meet their specific needs and goals.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Innovative Solutions</h3>
+        <p>
+          We constantly innovate to deliver the latest technologies and trends
+          to keep our clients ahead of the competition.
+        </p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>
+          "The team at MyBrand helped us take our website to the next level.
+          Their expertise and attention to detail were invaluable!"
+        </p>
+        <strong>- Sarah L., CEO</strong>
+      </div>
+      <div class="testimonial">
+        <p>
+          "Thanks to MyBrand, we were able to streamline our business processes
+          and significantly improve our productivity."
+        </p>
+        <strong>- John D., Operations Manager</strong>
+      </div>
+    </section>
+
+    <secion id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <div>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </secion>
+
+    <footer>
+      <p>&copy; 2024 One Solution. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
